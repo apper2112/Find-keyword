@@ -1,0 +1,18 @@
+Search for a word in a file or directory recursively using argparse in python. 74 lines so far.
+
+I tried to make it output as near as the bash version below which is just one line.
+
+	grep -ri searchword /home/andy/allmypython 
+
+------------------------------------------------------------
+PYTHON:
+
+USAGE:
+
+	python3 regargsFile.py <WORD> <[-f|-d]> <[FILENAME|DIRECTORY]>
+
+RUN EXAMPLES:
+
+	python3 regargsFile.py import -d allMyPython
+	python3 regargsFile.py argparse -f allMyPython/filename
+	python3 regargsFile.py blahblah -f allMyPython/serv/filename
