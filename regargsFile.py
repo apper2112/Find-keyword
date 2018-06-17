@@ -60,14 +60,10 @@ def Main():
 		else: #OR PASS A FILE
 			file_cruncher(fname, word)
 
-	except FileNotFoundError:
-		print('No such file or directory')
-
-	except IsADirectoryError:
-		print('Is a directory')
-
-	except UnicodeDecodeError:
-		print('Unicode Decode Error :-(')
+	except FileNotFoundError:print('No such file or directory')
+	except IsADirectoryError:print('Is a directory')
+	except NotADirectoryError:print('Not a directory')
+	except UnicodeDecodeError:print('Unicode Decode Error :-(')
 
 
 if __name__ == '__main__':
