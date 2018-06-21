@@ -9,10 +9,10 @@ PYTHON:
 
 USAGE:
 
-	python3 regargsFile.py <WORD> <[-f|-d]> <[FILENAME|DIRECTORY]>
+	python2 regargsFile.py <WORD> <[-f|-d]> <[FILENAME|DIRECTORY]>
 
 RUN EXAMPLES:
 
-	python3 regargsFile.py import -d allMyPython
-	python3 regargsFile.py argparse -f allMyPython/filename
-	python3 regargsFile.py blahblah -f allMyPython/serv/filename
+	python2 regargsFile.py import -d allMyPython
+	python2 regargsFile.py argparse -f allMyPython/filename
+	python2 regargsFile.py blahblah -f allMyPython/serv/filename
