@@ -42,7 +42,7 @@ def Main():
 
 	if len(sys.argv[1:]) == 0:
 		print('')
-		print('TO RUN: python3 regargsFile.py <WORD> <[-f|-d]> <[FILENAME|DIRECTORY]>')
+		print('TO RUN: python2 regargsFile.py <WORD> <[-f|-d]> <[FILENAME|DIRECTORY]>')
 		print('')
 		parser.print_help()
 		parser.exit()
