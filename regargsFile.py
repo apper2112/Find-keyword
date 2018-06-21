@@ -6,8 +6,8 @@ import sys
 import os
 
 # MATCH ANY PATTERN FROM FILE OR A DIRECTORY(S)
-# RUN: python3 regargsFile.py MATCHWORD -f nameoffile.txt
-# RUN: python3 regargsFile.py MATCHWORD -d nameofdirectory
+# RUN: python2 regargsFile.py MATCHWORD -f nameoffile.txt
+# RUN: python2 regargsFile.py MATCHWORD -d nameofdirectory
 
 def file_cruncher(fname, word):
 	with open(fname)as searchFile:
@@ -63,7 +63,7 @@ def Main():
 	except FileNotFoundError:print('No such file or directory')
 	except IsADirectoryError:print('Is a directory')
 	except NotADirectoryError:print('Not a directory')
-	except UnicodeDecodeError:print('Unicode Decode Error :-(')
+	except UnicodeDecodeError:print('Unicode Decode Error :-(') #PYTHON 3
 
 
 if __name__ == '__main__':
